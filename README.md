@@ -1,6 +1,6 @@
 ## 
-Hactoberfest2021
+# Hactoberfest2021
 
-Feel free to contribute and create your first PR,
+# Feel free to contribute and create your first PR,
 
-Thanks for contributing :)
+# Thanks for contributing :)
