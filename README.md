@@ -1,5 +1,5 @@
 ## 
-# Hactoberfest2021
+# hacktoberfest 2021 
 
 ## Getting started
 - Follow my another account and contribute    [Aditya664](https://github.com/Aditya664)
@@ -24,4 +24,4 @@ git push origin branch-name
 -   Create a new pull request from your forked repository (Click the  `New Pull Request`  button located at the top of your repo)
 -   Wait for your PR review and merge approval!
 
-# Th
+
