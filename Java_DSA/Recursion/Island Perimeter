@@ -1,0 +1,44 @@
+public class Island_Perimeter {
+    static int peri = 0;
+    public static void main(String[] args) {
+        int nums[][] = {{0,1,0,0},{1,1,1,0},{0,1,0,0},{1,1,0,0}};
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                if (nums[i][j]==1)
+                    dfs(i,j,nums);
+            }
+        }
+        System.out.println(peri);
+    }
+    public static void dfs(int i,int j, int nums[][])
+    {
+        if(i<0 || j<0 || nums.length<=i || nums[0].length<=j  )
+        {
+            peri+=1;
+            return;
+        }
+        if(nums[i][j]==0)
+        {
+            peri+=1;
+            return;
+        }
+        if(nums[i][j]==2)
+        {
+            return;
+        }
+        nums[i][j]=2;
+
+        dfs(i+1,j,nums);
+        dfs(i-1,j,nums);
+        dfs(i,j+1,nums);
+        dfs(i,j-1,nums);
+
+    }
+}
