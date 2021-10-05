@@ -1,5 +1,5 @@
 // C++ code to linearly search x in arr[]. 
-//If is present then return its location, otherwise return -1
+//If element is present then return its location, otherwise return -1
  
 #include <iostream>
 using namespace std;
