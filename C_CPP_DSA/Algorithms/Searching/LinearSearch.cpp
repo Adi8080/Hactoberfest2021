@@ -33,6 +33,6 @@ int main()
     }
     else{
          cout<<"Element is present at index "<<result;
-    }
+    } 
     return 0;
 }
