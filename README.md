@@ -4,6 +4,11 @@
   </div>
 Follow the README below to get started!
 
+
+## Note : This repo is excluded from the Hacktoberfest but you can still contribute and the reason is importance of DSA, yourcontribution will be for lifelong.
+
+
+
 ## Table of contents
 
 - [Getting Started](#getting-started)
