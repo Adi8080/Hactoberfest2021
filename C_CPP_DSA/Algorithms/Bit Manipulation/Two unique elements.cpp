@@ -32,5 +32,4 @@ int main(){
     unique(arr,8);
     return 0;
 }
-© 2021 GitHub, Inc.
-Terms
+
