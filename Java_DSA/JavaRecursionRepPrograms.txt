@@ -1,4 +1,0 @@
-Print MazePaths
-Print Permutations
-Print N Queens
-Get MazePaths.
