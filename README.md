@@ -31,3 +31,8 @@ Before you begin, please follow my other [account](https://github.com/Aditya664)
 9. **Star this repo**
 10. Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
 11. Wait for your new PR to be reviewed and merged!
+## Swags of Hacktoberfest:
+- Many of the candidates get attracted towards hacktoberfest to get swags . So, after 4 successfully merged pull request as for 2021 you will be eligible to get a Hacktoberfest T-shirt and Some stickers on your doorstep.
+ 
+     <li><B><p><img src="https://miro.medium.com/max/1050/1*4JctIO7irt8hFxBmTvUpiQ.jpeg" width="400" height="225" style="width: 400px; height: 225px;" alt="tshirt image"></a></p><p><img src="https://miro.medium.com/max/1050/1*jkffr74bq5RsQ_xqDhgqYQ.jpeg" width="400" height="225" style="width: 400px; height: 225px;" alt="stickers image"></p>
+</b></li>
