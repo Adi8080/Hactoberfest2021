@@ -1,0 +1,82 @@
+DSA using Java - Tree
+Tree represents nodes connected by edges. We'll going to discuss binary tree or binary search tree specifically.
+
+Binary Tree is a special datastructure used for data storage purposes. A binary tree has a special condition that each node can have two children at maximum. A binary tree have benefits of both an ordered array and a linked list as search is as quick as in sorted array and insertion or deletion operation are as fast as in linked list.
+Terms
+Following are important terms with respect to tree.
+
+Path − Path refers to sequence of nodes along the edges of a tree.
+
+Root − Node at the top of the tree is called root. There is only one root per tree and one path from root node to any node.
+
+Parent − Any node except root node has one edge upward to a node called parent.
+
+Child − Node below a given node connected by its edge downward is called its child node.
+
+Leaf − Node which does not have any child node is called leaf node.
+
+Subtree − Subtree represents descendents of a node.
+
+Visiting − Visiting refers to checking value of a node when control is on the node.
+
+Traversing − Traversing means passing through nodes in a specific order.
+
+Levels − Level of a node represents the generation of a node. If root node is at level 0, then its next child node is at level 1, its grandchild is at level 2 and so on.
+
+keys − Key represents a value of a node based on which a search operation is to be carried out for a node.
+
+Binary Search tree exibits a special behaviour. A node's left child must have value less than its parent's value and node's right child must have value greater than it's parent value.
+
+Binary Search Tree Representation
+We're going to implement tree using node object and connecting them through references.
+
+Basic Operations
+Following are basic primary operations of a tree which are following.
+
+Search − search an element in a tree.
+
+Insert − insert an element in a tree.
+
+Preorder Traversal − traverse a tree in a preorder manner.
+
+Inorder Traversal − traverse a tree in an inorder manner.
+
+Postorder Traversal − traverse a tree in a postorder manner.
+
+Node
+Define a node having some data, references to its left and right child nodes.
+
+public class Node {
+   public int data;
+   public Node leftChild;
+   public Node rightChild;
+
+   public Node(){}
+
+   public void display(){
+      System.out.print("("+data+ ")");
+   }
+}
+Search Operation
+Whenever an element is to be search. Start search from root node then if data is less than key value, search element in left subtree otherwise search element in right subtree. Follow the same algorithm for each node.
+
+public Node search(int data){
+   Node current = root;
+   System.out.print("Visiting elements: ");
+   while(current.data != data){
+      if(current != null)
+         System.out.print(current.data + " "); 
+         //go to left tree
+         if(current.data > data){
+            current = current.leftChild;
+         }//else go to right tree
+         else{                
+            current = current.rightChild;
+         }
+         //not found
+         if(current == null){
+            return null;
+         }
+      }
+   return current;
+}
