@@ -33,7 +33,7 @@ int main()
 		cin>>array[i];
 	}
 
-	duplicate(array,n);
+	duplicate(array,n); //calling function
 
 	return 0;
 }
