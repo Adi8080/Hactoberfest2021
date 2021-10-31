@@ -1,5 +1,5 @@
 
-
+#binary search using python
 def binary_Search(list,n,Beg,End):
     mid = int((Beg+End)/2)
     while n!=list[mid]:
