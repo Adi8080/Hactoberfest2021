@@ -57,6 +57,6 @@ int main()
 		cin>>array[i];
 	}
 
-	cout<<find(array,0,n)<<endl;
+	cout<<find(array,0,n)<<endl; //calling function
 	return 0;
 }
