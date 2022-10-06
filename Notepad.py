@@ -21,7 +21,7 @@ def save_as():
     op=filedialog.asksaveasfile(title="Save As",filetypes=(("Text File",".txt"),))
     op.write(area.get('1.0', END,))
     op.close()
-    messagebox.showinfo("Saved", "File has been saved")
+    messagebox.showinfo("Saved", "File has been saved!")
 
 def save():
 
@@ -31,7 +31,7 @@ def save():
         op=open(store.get(),"w")
         op.write(area.get('1.0',END,))
         op.close()
-        messagebox.showinfo("Saved", "File has been saved")
+        messagebox.showinfo("Saved", "File has been saved!")
 
 File=Menu(root)
 
