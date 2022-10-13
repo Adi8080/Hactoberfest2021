@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+struct n 
+{
+    int data;
+    struct n* next;
+};
+void p(struct n* head, int N)
+{
+    int len = 0, i;
+    struct n* temp = head;
+    while (temp != NULL) 
+    {
+        temp = temp->next;
+        len++;
+    }
+    if (len < N)
+        return;
+    temp = head;
+    for (i = 1; i < len - N + 1; i++)
+        temp = temp->next;
+    cout << temp->data;
+    return;
+}
+void fwd(struct n** h, int nd)
+{
+    struct n* new_n = new n();
+    new_n->data = nd;
+    new_n->next = (*h);
+    (*h) = new_n;
+}
+int main()
+{
+    struct n* head = NULL;
+    fwd(&head, 20);
+    fwd(&head, 4);
+    fwd(&head, 15);
+    fwd(&head, 35);
+    p(head, 4);
+    return 0;
+}
