@@ -1,21 +1,20 @@
 // Binary Search in C++
-
 #include <iostream>
 using namespace std;
 
-int binarySearch(int array[], int x, int low, int high) {
+int binarySearch(int arr[], int x, int low, int high) {
   if (high >= low) {
     int mid = low + (high - low) / 2;
 
 
-    if (array[mid] == x)
+    if (arr[mid] == x)
       return mid;
 
     // Search the left half
-    if (array[mid] > x)
-      return binarySearch(array, x, low, mid - 1);
+    if (arr[mid] > x)
+      return binarySearch(arr, x, low, mid - 1);
 
-    return binarySearch(array, x, mid + 1, high);
+    return binarySearch(arr, x, mid + 1, high);
   }
 
   return -1;
