@@ -3,12 +3,14 @@
 using namespace std;
 void display(int *array, int size)
 {
+    //traversing through the array
     for (int i = 1; i <= size; i++)
         cout << array[i] << " ";
     cout << endl;
 }
 int getMax(int array[], int size)
 {
+    //comparing current element to the remaining elements for finding maximum 
     int max = array[1];
     for (int i = 2; i <= size; i++)
     {
