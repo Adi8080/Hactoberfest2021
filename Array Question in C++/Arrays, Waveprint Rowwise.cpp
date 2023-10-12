@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 
-    int arr[1000][1000];
+   // int arr[1000][1000];
     int m,n;
     
     cout << "Enter the number of rows : ";
@@ -16,6 +16,9 @@ int main()
     
     cout << "Enter the number of columns : ";
     cin >> n;
+
+    //make array dynamic
+    int arr[m][n];
     
  
     
